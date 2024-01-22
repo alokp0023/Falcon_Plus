@@ -15,13 +15,13 @@ const Logout = React.lazy(() => import('../pages/auth/Logout'))
 const Dashboard = React.lazy(() => import('../pages/Dashboard'))
 
 // // pages
-// const ProfilePages = React.lazy(() => import('../pages/other/Profile/'))
-// const InvoicePages = React.lazy(() => import('../pages/other/Invoice'))
-// const FAQPages = React.lazy(() => import('../pages/other/FAQ'))
-// const PricingPages = React.lazy(() => import('../pages/other/Pricing'))
+const RawMaterial = React.lazy(() => import('../pages/Products/RawMaterial'))
+const ManufactureUnit = React.lazy(() => import('../pages/Products/ManufactureUnit'))
+const DisputeUnit = React.lazy(() => import('../pages/Products/DisputeUnit'))
+const Announcement = React.lazy(() => import('../pages/Announcement'))
 // const MaintenancePages = React.lazy(() => import('../pages/other/Maintenance'))
-// const StarterPages = React.lazy(() => import('../pages/other/Starter'))
-// const ContactListPages = React.lazy(() => import('../pages/other/ContactList'))
+const Attendance = React.lazy(() => import('../pages/Attendance'))
+const ManageUnit = React.lazy(() => import('../pages/ManageUnit'))
 // const TimelinePages = React.lazy(() => import('../pages/other/Timeline'))
 
 // // error
@@ -49,68 +49,54 @@ const dashboardRoutes = {
 			element: <Dashboard />,
 			route: PrivateRoute,
 		},
+		{
+			path: '/attendance',
+			name: 'Attendance',
+			element: <Attendance />,
+			route: PrivateRoute,
+		},
+		{
+			path: '/announcement',
+			name: 'Announcement',
+			element: <Announcement />,
+			route: PrivateRoute,
+		},
+		{
+			path: '/manage-unit',
+			name: 'Manage Unit',
+			element: <ManageUnit />,
+			route: PrivateRoute,
+		},
 	],
 }
 
-// pages
-// const customPagesRoutes = {
-// 	path: '/pages',
-// 	name: 'Pages',
-// 	icon: 'pages',
-// 	header: 'Custom',
-// 	children: [
-// 		{
-// 			path: '/pages/profile',
-// 			name: 'Profile',
-// 			element: <ProfilePages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/invoice',
-// 			name: 'Invoice',
-// 			element: <InvoicePages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/faq',
-// 			name: 'FAQ',
-// 			element: <FAQPages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/pricing',
-// 			name: 'Pricing',
-// 			element: <PricingPages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/starter',
-// 			name: 'Starter Page',
-// 			element: <StarterPages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/contact-list',
-// 			name: 'Contact List',
-// 			element: <ContactListPages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: '/pages/timeline',
-// 			name: 'Timeline',
-// 			element: <TimelinePages />,
-// 			route: PrivateRoute,
-// 		},
-// 		{
-// 			path: 'pages/error-404-alt',
-// 			name: 'Error - 404-alt',
-// 			element: <Error404Alt />,
-// 			route: PrivateRoute,
-// 		},
-// 	],
-// }
+const ProductsRoutes = {
+	path: '/products',
+	name: 'Products',
+	icon: 'home',
+	header: 'Navigation',
+	children: [
+		{
+			path: '/raw-material',
+			name: 'RawMaterial',
+			element: <RawMaterial />,
+			route: PrivateRoute,
+		},
+		{
+			path: '/manufacture-unit',
+			name: 'ManufactureUnit',
+			element: <ManufactureUnit />,
+			route: PrivateRoute,
+		},
+		{
+			path: '/dispute-unit',
+			name: 'DisputeUnit',
+			element: <DisputeUnit />,
+			route: PrivateRoute,
+		},
+	],
+}
 
-// auth
 const authRoutes = [
 	{
 		path: '/auth/login',
@@ -187,7 +173,7 @@ const flattenRoutes = (routes) => {
 }
 
 // All routes
-const authProtectedRoutes = [dashboardRoutes]
+const authProtectedRoutes = [dashboardRoutes,ProductsRoutes]
 const publicRoutes = [...authRoutes, ...otherPublicRoutes]
 
 const authProtectedFlattenRoutes = flattenRoutes([...authProtectedRoutes])

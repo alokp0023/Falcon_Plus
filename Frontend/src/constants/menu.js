@@ -11,22 +11,22 @@ const MENU_ITEMS = [
 		},
 	},
 	{
-		key: 'pages',
+		key: 'products',
 		label: 'Products',
 		isTitle: false,
 		icon: 'ri-pages-line',
 		children: [
 			{
-				key: 'pages-Starter',
+				key: 'raw-material',
 				label: 'Raw Material',
-				url: '/',
-				parentKey: 'pages',
+				url: '/raw-material',
+				parentKey: 'products',
 			},
 			{
-				key: 'pages-ContactList',
+				key: 'manufacture-unit',
 				label: 'Manufacturing Unit',
-				url: '/',
-				parentKey: 'pages',
+				url: '/manufacture-unit',
+				parentKey: 'products',
 			},
 			// {
 			// 	key: 'pages-profile',
@@ -41,10 +41,10 @@ const MENU_ITEMS = [
 			// 	parentKey: 'pages',
 			// },
 			{
-				key: 'pages-invoice',
+				key: 'dispute-unit',
 				label: 'Dispute Unit',
-				url: '/pages/invoice',
-				parentKey: 'pages',
+				url: '/dispute-unit',
+				parentKey: 'products',
 			},
 			// {
 			// 	key: 'pages-faq',
@@ -85,24 +85,24 @@ const MENU_ITEMS = [
 		],
 	},
 	{
-		key: 'dashboard',
+		key: 'manage-unit',
 		label: 'Manage Unit',
 		isTitle: false,
-		url: '/',
+		url: '/manage-unit',
 		icon: 'ri-database-2-line',
 	},
 	{
-		key: 'dashboard',
+		key: 'announcement',
 		label: 'Announcement',
 		isTitle: false,
-		url: '/',
+		url: '/announcement',
 		icon: 'ri-customer-service-2-line',
 	},
 	{
-		key: 'dashboard',
+		key: 'attendance',
 		label: 'Attendance',
 		isTitle: false,
-		url: '/',
+		url: '/attendance',
 		icon: 'ri-coupon-3-line',
 	}
 ]

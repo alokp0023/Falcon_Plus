@@ -1,5 +1,4 @@
-import { HORIZONTAL_MENU_ITEMS } from "../../constants/menu"
-import { MENU_ITEMS } from "../menu-items"
+import { HORIZONTAL_MENU_ITEMS, MENU_ITEMS } from "../../constants/menu"
 
 const getMenuItems = () => {
 	// NOTE - You can fetch from server and return here as well
