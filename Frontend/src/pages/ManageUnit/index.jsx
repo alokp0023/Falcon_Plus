@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { PageBreadcrumb } from "../../components";
 
 function ManageUnit() {
   return (
-    <div>ManageUnit</div>
-  )
+    <div>
+      <PageBreadcrumb title="Manage Unit" />
+    </div>
+  );
 }
 
-export default ManageUnit
+export default ManageUnit;

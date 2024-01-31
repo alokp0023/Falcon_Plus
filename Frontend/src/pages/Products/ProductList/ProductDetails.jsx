@@ -4,7 +4,7 @@ import { Button, Card, Col, Row } from "react-bootstrap";
 import { employeeRecords } from "../../Dashboard/data";
 import { Table } from "../../../components/table";
 
-function RawMaterial() {
+function ProductDetails() {
 	const columns = [
 		{
 			Header: 'ID',
@@ -49,12 +49,12 @@ function RawMaterial() {
 	
   return (
     <div>
-      <PageBreadcrumb title="Raw Material" subName="Products" />
+      <PageBreadcrumb title="Product details" subName="Product-list" />
       <Row>
         <Col>
           <Card>
             <Card.Header>
-              <Button className="float-end">Create Raw Material</Button>
+              <Button className="float-end">Create New Product</Button>
             </Card.Header>
             <Card.Body>
               <Table
@@ -73,4 +73,4 @@ function RawMaterial() {
   );
 }
 
-export default RawMaterial;
+export default ProductDetails;

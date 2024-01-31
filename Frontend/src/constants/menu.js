@@ -23,6 +23,12 @@ const MENU_ITEMS = [
 				parentKey: 'products',
 			},
 			{
+				key: 'product',
+				label: 'Product List',
+				url: '/Product-list',
+				parentKey: 'products',
+			},
+			{
 				key: 'manufacture-unit',
 				label: 'Manufacturing Unit',
 				url: '/manufacture-unit',

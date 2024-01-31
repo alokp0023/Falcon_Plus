@@ -15,7 +15,7 @@ export function useAuthContext() {
 	return context
 }
 
-const authSessionKey = '_VELONIC_AUTH'
+const authSessionKey = '_FALCON_PLUS_AUTH'
 
 export function AuthProvider({ children }) {
 	const [user, setUser] = useState(

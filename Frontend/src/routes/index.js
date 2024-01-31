@@ -16,6 +16,9 @@ const Dashboard = React.lazy(() => import('../pages/Dashboard'))
 
 // // pages
 const RawMaterial = React.lazy(() => import('../pages/Products/RawMaterial'))
+const ProductList = React.lazy(() => import('../pages/Products/ProductList'))
+const ProductDetails = React.lazy(() => import('../pages/Products/ProductList/ProductDetails'))
+
 const ManufactureUnit = React.lazy(() => import('../pages/Products/ManufactureUnit'))
 const DisputeUnit = React.lazy(() => import('../pages/Products/DisputeUnit'))
 const Announcement = React.lazy(() => import('../pages/Announcement'))
@@ -81,6 +84,21 @@ const ProductsRoutes = {
 			name: 'RawMaterial',
 			element: <RawMaterial />,
 			route: PrivateRoute,
+		},
+		{
+			path: '/product-list',
+			name: 'ProductList',
+			element: <ProductList />,
+			route: PrivateRoute,
+			children:[
+				{
+					path: '/product-details',
+					name: 'productDetails',
+					element: <ProductDetails />,
+					route: PrivateRoute,
+					parent:ProductList
+				},
+			]
 		},
 		{
 			path: '/manufacture-unit',

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { PageBreadcrumb } from "../../../components";
 
 function DisputeUnit() {
   return (
-    <div>DisputeUnit</div>
-  )
+    <div>
+      <PageBreadcrumb title="Dispute Unit" subName="Products" />
+    </div>
+  );
 }
 
-export default DisputeUnit
+export default DisputeUnit;
