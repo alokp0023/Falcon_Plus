@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "falconplus-413021",
+  "private_key_id": "b01a455cd01f92a8c430f6516ffee3281d986456",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEv...<YOUR PRIVATE KEY HERE>...SHg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ims-736@falconplus-413021.iam.gserviceaccount.com",
+  "client_id": "105643201525267063020",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/your-service-account-name@falconplus-413021.iam.gserviceaccount.com"
+}
