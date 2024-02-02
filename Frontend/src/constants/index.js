@@ -29,6 +29,6 @@ export const ProductFields = [
     {
         name:'color',
         label:'Color',
-        type:'text'
+        type:'color'
     }
 ]
