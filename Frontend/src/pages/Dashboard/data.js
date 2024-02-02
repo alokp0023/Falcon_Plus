@@ -26,36 +26,32 @@ export const employeeRecords = [
 		id: 1,
 		age: 32,
 		name: 'Burt',
-		company: 'Kaggle',
-		phone: '+1 (823) 532-2427',
+		unit: 'mtr',
 	},
 	{
 		id: 2,
 		age: 23,
 		name: 'Bruno',
-		company: 'Magmina',
-		phone: '+1 (813) 583-2089',
+		unit: "nos"
 	},
 	{
 		id: 3,
 		age: 31,
 		name: 'Alvarado',
-		company: 'Translink',
-		phone: '+1 (975) 468-3875',
+		unit: "pcs"
 	},
 	{
 		id: 4,
 		age: 24,
 		name: 'Lilia',
-		company: 'Digitalus',
-		phone: '+1 (891) 537-3461',
+		unit: "kg"
 	},
 	{
 		id: 5,
 		age: 25,
 		name: 'Amanda',
 		company: 'Bunga',
-		phone: '+1 (916) 522-3747',
+		unit: "nos"
 	},
 	{
 		id: 6,

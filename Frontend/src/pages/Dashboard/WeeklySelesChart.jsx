@@ -8,15 +8,15 @@ const weeklyChartOpts = {
 	series: [
 		{
 			name: 'Revenue',
-			data: [440, 505, 414, 526, 227, 413, 201],
+			data: [440, 505, 414, 526, 227, 413],
 		},
-		{
-			name: 'Sales',
-			data: [320, 258, 368, 458, 201, 365, 389],
-		},
+		// {
+		// 	name: 'Sales',
+		// 	data: [ 258, 368, 458, 201, 365, 389],
+		// },
 		{
 			name: 'Profit',
-			data: [320, 458, 369, 520, 180, 369, 160],
+			data: [ 458, 369, 520, 180, 369, 160],
 		},
 	],
 	chart: {
@@ -42,13 +42,13 @@ const weeklyChartOpts = {
 	colors: ['#3bc0c3', '#1a2942', '#d1d7d973'],
 	xaxis: {
 		categories: [
-			'Sunday',
-			'Monday',
-			'Tuesday',
-			'Wednesday',
-			'Thursday',
-			'Friday',
-			'Saturday',
+			// 'Jun',
+			'Aug',
+			'Sept',
+			'Oct',
+			'Nov',
+			'Dec',
+			'Jan',
 		],
 	},
 	yaxis: {
@@ -79,7 +79,7 @@ const weeklyChartOpts = {
 const WeeklySelesChart = () => {
 	return (
 		<CustomCardPortlet
-			cardTitle="Weekly Sales Report"
+			cardTitle="Last 6 Month Sales Report"
 			titleClass="header-title"
 		>
 			<div dir="ltr">

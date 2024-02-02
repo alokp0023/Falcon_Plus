@@ -28,53 +28,51 @@ function ManufactureUnit() {
               </div>
               <div className="row mt-3"></div>
               <div className="row mt-1">
-                  <Form
-                    noValidate
-                    validated={validated}
-                    onSubmit={handleSubmit}
-                  >
-                <div className="col-4">
-                    <FormInput
-                      name="select"
-                      label="Product Name"
-                      type="select"
-                      containerClass="mb-3"
-                      className="form-select"
-                      // register={register}
-                      key="select"
-                      // errors={errors}
-                      // control={control}
-                    >
-                      <option defaultValue="selected">1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </FormInput>
-                </div>
-                <div className="col-4">
-                <Form.Group className="position-relative mb-3">
-                      <Form.Label>Quantity</Form.Label>
-                      <Form.Control
-                        type="number"
-                        id="validationTooltip01"
-                        placeholder="Quantity"
-                        defaultValue="0"
-                        required
-                      />
-                      <Form.Control.Feedback tooltip>
-                        Looks good!
-                      </Form.Control.Feedback>
-                      <Form.Control.Feedback type="invalid" tooltip>
-                        Please enter first name.
-                      </Form.Control.Feedback>
-                    </Form.Group>
-                </div>
-                    
-                    <Button variant="primary" type="submit">
-                    Add Product
-                    </Button>
-                  </Form>
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                  <div className="row">
+                    <div className="col-4">
+                      <FormInput
+                        name="select"
+                        label="Product Name"
+                        type="select"
+                        containerClass="mb-3"
+                        className="form-select"
+                        // register={register}
+                        key="select"
+                        // errors={errors}
+                        // control={control}
+                      >
+                        <option defaultValue="selected">Duff</option>
+                        <option>falcon red</option>
+                        <option>desk suit</option>
+                        <option>sachon</option>
+                      </FormInput>
+                    </div>
+                    <div className="col-4">
+                      <Form.Group className="position-relative mb-3">
+                        <Form.Label>Quantity</Form.Label>
+                        <Form.Control
+                          type="number"
+                          id="validationTooltip01"
+                          placeholder="Quantity"
+                          defaultValue="0"
+                          required
+                        />
+                        <Form.Control.Feedback tooltip>
+                          Looks good!
+                        </Form.Control.Feedback>
+                        <Form.Control.Feedback type="invalid" tooltip>
+                          Please enter first name.
+                        </Form.Control.Feedback>
+                      </Form.Group>
+                    </div>
+                    <div className="col-4 mt-3">
+                      <Button variant="primary" type="submit">
+                        Add Product
+                      </Button>
+                    </div>
+                  </div>
+                </Form>
               </div>
               <div className="row">
                 <div className="col-12">

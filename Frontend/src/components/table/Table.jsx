@@ -11,6 +11,7 @@ import {
 import classNames from "classnames";
 import { Pagination } from "./Pagination";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const GlobalFilter = ({
   preGlobalFilteredRows,
@@ -211,14 +212,12 @@ const Table = (props) => {
                   {row.cells.map((cell) => {
                     return cell.column.Header == "action" ? (
                       <td>
-                        <Link to="#" className="text-reset fs-16 px-1">
-                          {" "}
-                          <i className="ri-settings-3-line" />
-                        </Link>
-                        <Link to="#" className="text-reset fs-16 px-1">
-                          {" "}
+                          <Button type="button" className="btn-outline-success me-2 mt-1">
+                          <i className=" ri-edit-2-fill"  />
+                          </Button>
+                          <Button type="button" className=" btn-outline-danger mt-1 ">
                           <i className="ri-delete-bin-2-line" />
-                        </Link>
+                          </Button>
                       </td>
                     ) : (
                       <td {...cell.getCellProps()}>{cell.render("Cell")}</td>

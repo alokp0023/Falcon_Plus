@@ -1,15 +1,14 @@
-import React from 'react'
-import { Card } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { SingleProductCard } from "./SingleProductCard";
+import { PageBreadcrumb } from "../../../components";
 
 function ProductList() {
   return (
-    <div><Card>
-    <Link to='/product-details'>
-    Product 1
-    </Link>
-    </Card></div>
-  )
+    <div>
+      <PageBreadcrumb title="Product List" subName="Products" />
+      <SingleProductCard />
+    </div>
+  );
 }
 
-export default ProductList
+export default ProductList;

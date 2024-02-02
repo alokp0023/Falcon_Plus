@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { PageBreadcrumb } from "../../../components";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { employeeRecords } from "../../Dashboard/data";
 import { Table } from "../../../components/table";
+import CreateProduct from "./createProduct";
 
 function ProductDetails() {
+	const [open, setOpen] = useState(false);
 	const columns = [
 		{
 			Header: 'ID',
@@ -49,12 +51,12 @@ function ProductDetails() {
 	
   return (
     <div>
-      <PageBreadcrumb title="Product details" subName="Product-list" />
+      <PageBreadcrumb title="Product details" subName="Product List" />
       <Row>
         <Col>
           <Card>
             <Card.Header>
-              <Button className="float-end">Create New Product</Button>
+              <Button className="float-end" onClick={()=>setOpen(true)}>Create New Product</Button>
             </Card.Header>
             <Card.Body>
               <Table
@@ -69,6 +71,7 @@ function ProductDetails() {
           </Card>
         </Col>
       </Row>
+	  <CreateProduct open={open} handleToggle={()=>setOpen(!open)} title={'Create Product'}/>
     </div>
   );
 }
